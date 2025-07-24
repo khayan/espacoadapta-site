@@ -18,6 +18,9 @@
     <meta property="og:type" content="website">
 
     <link rel="canonical" href="https://espacoadapta.com.br" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <script type="application/ld+json">
         {
@@ -49,171 +52,349 @@
         }
     </script>
 
-
     <title>Espaço Adapta | Clínica Multidisciplinar para Crianças e Adolescentes em Santos/SP</title>
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo-web.png" alt="Espaço Adapta - Clínica Multidisciplinar Infantil" loading="lazy">
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#publico">Público Atendido</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#manifesto">Manifesto</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
     <main>
-
-        <section id="hero" aria-labelledby="titulo-hero">
-            <h1 id="titulo-hero">Espaço Adapta: Atendimento Psicopedagógico para Crianças em Santos</h1>
-            <p>
-                Somos um espaço dedicado ao desenvolvimento de crianças e adolescentes, com atendimentos em
-                psicopedagogia. Atendemos famílias em Santos/SP e região.
-            </p>
-
-            <p>
-                Somos especialistas no atendimento de <strong>crianças, pré-adolescentes e adolescentes</strong> com
-                <strong>dificuldades e transtornos de aprendizagem</strong>, <strong>deficiência visual</strong>,
-                <strong>surdez</strong>, <strong>surdocegueira</strong>, <strong>autismo</strong>, <strong>síndrome de
-                    Down</strong>, <strong>paralisia cerebral</strong>, <strong>deficiência múltipla</strong> e no
-                <strong>apoio à inclusão</strong>.
-            </p>
-
-            <p>
-                <strong>Acolhimento</strong>, <strong>empatia</strong> e <strong>sessões bem estruturadas</strong> fazem
-                parte do nosso jeito de atender.
-            </p>
+        <!-- Hero Section -->
+        <section class="hero section" id="hero" aria-labelledby="titulo-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" id="titulo-hero">
+                        Desenvolvendo o potencial de cada criança
+                    </h1>
+                    <p class="hero-subtitle">
+                        Atendimento psicopedagógico especializado em Santos/SP
+                    </p>
+                    <p class="hero-description">
+                        Somos especialistas no atendimento de <strong>crianças, pré-adolescentes e adolescentes</strong> com
+                        <strong>dificuldades e transtornos de aprendizagem</strong>, <strong>autismo</strong>, <strong>TDAH</strong>, 
+                        <strong>síndrome de Down</strong> e outras condições que impactam no processo de aprendizagem.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="/agendamento.html" class="btn btn-primary">
+                            Agendar Consulta
+                        </a>
+                        <a href="#sobre" class="btn btn-secondary">
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="sobre">
-            <h2>Quem somos</h2>
-            <p>O <strong>Espaço Adapta</strong> oferece <strong>atendimento psicopedagógico</strong> para crianças,
-                pré-adolescentes e adolescentes com
-                <strong>dificuldades escolares, TEA, TDAH, Síndrome de Down</strong> e outras condições que impactam no
-                <strong>processo de aprendizagem</strong>.
-            </p>
-
-            <p>Nosso trabalho é personalizado, respeitando o tempo e a individualidade de cada criança. Atuamos com uma
-                equipe
-                dedicada, plano terapêutico individualizado e escuta ativa às famílias.
-            </p>
-
-            <p>
-                Possuímos parcerias com outros profissionais como psicólogos, fonoaudiólogos, terapeutas ocupacionais,
-                psicomotricistas, entre outras terapias integradas.
-            </p>
+        <!-- About Section -->
+        <section class="section" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Quem somos</h2>
+                    <p class="section-subtitle">
+                        Uma equipe dedicada ao desenvolvimento integral de crianças e adolescentes
+                    </p>
+                </div>
+                
+                <div class="card-grid grid-2x2">
+                    <div class="card">
+                        <div class="card-icon">🧠</div>
+                        <h3 class="card-title">Atendimento Especializado</h3>
+                        <p class="card-text">
+                            Oferecemos <strong>atendimento psicopedagógico</strong> para crianças, pré-adolescentes e adolescentes com 
+                            <strong>dificuldades escolares, TEA, TDAH, Síndrome de Down</strong> e outras condições que impactam no 
+                            processo de aprendizagem.
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">❤️</div>
+                        <h3 class="card-title">Abordagem Personalizada</h3>
+                        <p class="card-text">
+                            Nosso trabalho é personalizado, respeitando o tempo e a individualidade de cada criança. 
+                            Atuamos com uma equipe dedicada, plano terapêutico individualizado e escuta ativa às famílias.
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🤝</div>
+                        <h3 class="card-title">Equipe Multidisciplinar</h3>
+                        <p class="card-text">
+                            Possuímos parcerias com outros profissionais como psicólogos, fonoaudiólogos, terapeutas ocupacionais,
+                            psicomotricistas, entre outras terapias integradas.
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">✨</div>
+                        <h3 class="card-title">Nossos Valores</h3>
+                        <p class="card-text">
+                            <strong>Acolhimento</strong>, <strong>empatia</strong> e <strong>sessões bem estruturadas</strong> fazem
+                            parte do nosso jeito de atender cada família.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="publico">
-            <h2>Quem atendemos</h2>
-            <p>Atendemos crianças e jovens, com ou sem diagnóstico, que apresentam desafios em seu desenvolvimento ou
-                aprendizagem.</p>
-            <ul>
-                <li><strong>Transtorno do Espectro Autista (TEA)</strong></li>
-                <li><strong>Transtorno de Déficit de Atenção com Hiperatividade (TDAH)</strong></li>
-                <li><strong>Síndrome de Down</strong></li>
-                <li><strong>Transtornos de aprendizagem</strong></li>
-                <li><strong>Dificuldades no processo de desenvolvimento pedagógico</strong></li>
-                <li><strong>Deficiência visual</strong></li>
-                <li><strong>Deficiência auditiva</strong></li>
-                <li><strong>Surdocegueira</strong></li>
-            </ul>
-            <p>Com <strong>acolhimento</strong> e <strong>dedicação</strong>, construímos caminhos de desenvolvimento
-                mais leves e eficazes.</p>
-
-            <p>
-                Em nossas terapias, utilizamos a Ciência ABA — <em>Applied Behavior Analysis</em> — como direcionamento
-                terapêutico baseado na Análise do Comportamento Aplicada.
-            </p>
-
+        <!-- Target Audience Section -->
+        <section class="section target-audience" id="publico">
+            <div class="container">
+                <h2 class="section-title">Público Atendido</h2>
+                <p class="target-intro">
+                    Atendemos crianças e adolescentes, com ou sem diagnóstico, que apresentam desafios em seu desenvolvimento ou aprendizagem.
+                </p>
+                
+                <div class="target-conditions">
+                    <span class="condition-tag">Transtorno do Espectro Autista (TEA)</span>
+                    <span class="condition-tag">TDAH</span>
+                    <span class="condition-tag">Síndrome de Down</span>
+                    <span class="condition-tag">Transtornos de aprendizagem</span>
+                    <span class="condition-tag">Dificuldades pedagógicas</span>
+                    <span class="condition-tag">Deficiência visual</span>
+                    <span class="condition-tag">Deficiência auditiva</span>
+                    <span class="condition-tag">Surdocegueira</span>
+                </div>
+                
+                <p class="target-method">
+                    Utilizamos a Ciência ABA (<em>Applied Behavior Analysis</em>) como direcionamento terapêutico baseado na Análise do Comportamento Aplicada.
+                </p>
+            </div>
         </section>
 
-        <section id="agendamento">
-            <h2>Agende uma entrevista familiar conosco</h2>
-            <p>Descubra como podemos apoiar o desenvolvimento do seu filho por meio de um plano personalizado e
-                acolhedor.</p>
-            <p>📅 <a href="/agendamento.html">Clique aqui para agendar agora</a></p>
-        </section>
-
-
-
-        <section id="diferenciais">
-            <h2>Nosso diferencial</h2>
-            <ul>
-                <li>Atendimento individualizado e plano terapêutico exclusivo</li>
-                <li>Equipe multidisciplinar com experiência em educação e saúde infantil</li>
-                <li>Estímulo à participação ativa dos adolescentes na interação social e em atividades em grupo</li>
-                <li>Ambiente acolhedor e estruturado</li>
-                <li>Escuta ativa às famílias e apoio durante todo o processo</li>
-            </ul>
-        </section>
-
-        <section id="manifesto">
-            <h2>Nosso manifesto</h2>
-            <blockquote>
-                <p>No Espaço Adapta, acreditamos que toda criança tem um jeito único de aprender.</p>
-                <p>Somos um espaço de escuta, acolhimento e descoberta, onde dificuldades viram caminhos e onde as
-                    diferenças são celebradas com afeto, respeito e cor.</p>
-                <p>Acreditamos no potencial de cada criança e caminhamos lado a lado com as famílias, ajudando a
-                    construir um processo de aprendizagem mais leve, significativo e feliz.</p>
-                <p><strong>Aqui, adaptar é crescer com confiança.</strong></p>
-            </blockquote>
-        </section>
-
-        <section id="servicos">
-            <h2>Serviços oferecidos pelo Espaço Adapta</h2>
-            <ul>
-                <li><strong>Intervenção psicopedagógica:</strong> apoio individualizado no processo de aprendizagem de
-                    crianças e adolescentes.</li>
-                <li><strong>Orientação à família:</strong> acompanhamento e direcionamento para o fortalecimento dos
-                    vínculos e da rotina familiar.</li>
-                <li><strong>Apoio à inclusão:</strong> suporte especializado para adaptação escolar e social.</li>
-                <li><strong>Relatórios de Evolução:</strong> acompanhamento documentado do progresso terapêutico e
-                    educacional.</li>
-                <li><strong>Workshops e palestras:</strong> eventos formativos sobre desenvolvimento infantil, educação
-                    e inclusão.</li>
-                <li><strong>Atividades complementares (online):</strong> propostas interativas que reforçam o
-                    desenvolvimento fora do ambiente presencial.</li>
-            </ul>
-
-        </section>
-
-        <footer id="contato">
-            <h2>Fale com o Espaço Adapta</h2>
-            <p>Entre em contato ou conheça nossas redes sociais:</p>
-
-            <ul>
-                <li>
-                    <a href="https://wa.me/5513997610200" target="_blank" rel="noopener noreferrer">
-                        WhatsApp
+        <!-- CTA Section -->
+        <section class="cta-section section" id="agendamento">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Agende uma entrevista familiar conosco</h2>
+                    <p class="cta-text">
+                        Descubra como podemos apoiar o desenvolvimento do seu filho por meio de um plano personalizado e acolhedor.
+                    </p>
+                    <a href="/agendamento.html" class="btn btn-primary">
+                        Agendar Agora
                     </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/espacoadapta.com.br" target="_blank" rel="noopener noreferrer">
-                        Instagram
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.google.com/maps/place/Espa%C3%A7o+Adapta+-+Psicopedagogia/@-23.9521427,-46.3303493,17z/data=!4m18!1m9!3m8!1s0x94ce0382a07b72b9:0xa17e673f68d453da!2sEspa%C3%A7o+Adapta+-+Psicopedagogia!8m2!3d-23.9521476!4d-46.3277744!9m1!1b1!16s%2Fg%2F11xhbbnjxj!3m7!1s0x94ce0382a07b72b9:0xa17e673f68d453da!8m2!3d-23.9521476!4d-46.3277744!9m1!1b1!16s%2Fg%2F11xhbbnjxj?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D"
-                        target="_blank" rel="noopener noreferrer">
-                        Veja avaliações no Google
-                    </a>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </section>
 
-            <h3>Horário de Atendimento do Espaço Adapta</h3>
-            <p>De segunda a sexta-feira das 08:30 às 19:00</p>
 
-            <h3>Localização do Espaço Adapta</h3>
-            <p>Av. Senador Feijó, 686 – Sala 1224 – Vila Matias, Santos – SP, 11015-504</p>
-            <p>📍 <a href="/localizacao.html">Como chegar?</a></p>
 
-            <p>
-                <small>
-                    &copy; 2025 Espaço Adapta — Todos os direitos reservados. <br />
-                    Site desenvolvido por <a href="https://multiexperience.com.br" target="_blank"
-                        rel="noopener noreferrer">
-                        <strong>multiexperience</strong>
-                    </a>
-                </small>
-            </p>
+        <!-- Differentials Section -->
+        <section class="differentials-section section" id="diferenciais">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Por que escolher o Espaço Adapta?</h2>
+                    <p class="section-subtitle">
+                        Nosso diferencial está no cuidado personalizado e na expertise que transformam vidas
+                    </p>
+                </div>
+                
+                <div class="differentials-grid">
+                    <div class="differential-item">
+                        <div class="differential-icon">👨‍⚕️</div>
+                        <h3 class="differential-title">Atendimento Individualizado</h3>
+                        <p class="differential-text">Plano terapêutico exclusivo, respeitando o tempo e a individualidade de cada criança.</p>
+                    </div>
+                    
+                    <div class="differential-item">
+                        <div class="differential-icon">🤝</div>
+                        <h3 class="differential-title">Equipe Multidisciplinar</h3>
+                        <p class="differential-text">Profissionais experientes em educação e saúde infantil trabalhando de forma integrada.</p>
+                    </div>
+                    
+                    <div class="differential-item">
+                        <div class="differential-icon">🌟</div>
+                        <h3 class="differential-title">Participação Ativa</h3>
+                        <p class="differential-text">Estímulo constante à interação social e atividades em grupo para adolescentes.</p>
+                    </div>
+                    
+                    <div class="differential-item">
+                        <div class="differential-icon">🏠</div>
+                        <h3 class="differential-title">Ambiente Acolhedor</h3>
+                        <p class="differential-text">Espaço estruturado e pensado para o bem-estar e desenvolvimento infantil.</p>
+                    </div>
+                    
+                    <div class="differential-item">
+                        <div class="differential-icon">👨‍👩‍👧‍👦</div>
+                        <h3 class="differential-title">Suporte Familiar</h3>
+                        <p class="differential-text">Escuta ativa às famílias e apoio contínuo durante todo o processo de desenvolvimento.</p>
+                    </div>
+                    
+                    <div class="differential-item">
+                        <div class="differential-icon">🎯</div>
+                        <h3 class="differential-title">Metodologia Baseada em Evidências</h3>
+                        <p class="differential-text">Utilizamos a Ciência ABA e técnicas comprovadas cientificamente para resultados eficazes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manifesto Section -->
+        <section class="manifesto-section section" id="manifesto">
+            <div class="container">
+                <div class="manifesto-content">
+                    <div class="manifesto-visual">
+                        <div class="manifesto-blocks">
+                            <div class="manifesto-block teal"></div>
+                            <div class="manifesto-block orange"></div>
+                            <div class="manifesto-block yellow"></div>
+                            <div class="manifesto-block purple"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="manifesto-text">
+                        <h2 class="manifesto-title">Nosso Manifesto</h2>
+                        
+                        <div class="manifesto-quote">
+                            <p class="manifesto-line">
+                                <span class="manifesto-highlight">No Espaço Adapta,</span> acreditamos que toda criança tem um jeito único de aprender.
+                            </p>
+                            
+                            <p class="manifesto-line">
+                                Somos um espaço de <span class="manifesto-highlight">escuta, acolhimento e descoberta,</span> onde dificuldades viram caminhos e onde as diferenças são celebradas com afeto, respeito e cor.
+                            </p>
+                            
+                            <p class="manifesto-line">
+                                Acreditamos no <span class="manifesto-highlight">potencial de cada criança</span> e caminhamos lado a lado com as famílias, ajudando a construir um processo de aprendizagem mais leve, significativo e feliz.
+                            </p>
+                        </div>
+                        
+                        <div class="manifesto-signature">
+                            <span class="signature-line"></span>
+                            <p class="signature-text">Aqui, adaptar é crescer com confiança.</p>
+                            <span class="signature-line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section section" id="servicos">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Serviços oferecidos</h2>
+                    <p class="section-subtitle">
+                        Atendimento completo e personalizado para cada necessidade
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🧠</div>
+                        <h3 class="service-title">Intervenção Psicopedagógica</h3>
+                        <p class="service-description">Apoio individualizado no processo de aprendizagem de crianças e adolescentes.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">👨‍👩‍👧‍👦</div>
+                        <h3 class="service-title">Orientação à Família</h3>
+                        <p class="service-description">Acompanhamento e direcionamento para o fortalecimento dos vínculos e da rotina familiar.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🌈</div>
+                        <h3 class="service-title">Apoio à Inclusão</h3>
+                        <p class="service-description">Suporte especializado para adaptação escolar e social das crianças.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3 class="service-title">Relatórios de Evolução</h3>
+                        <p class="service-description">Acompanhamento documentado do progresso terapêutico e educacional.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🎓</div>
+                        <h3 class="service-title">Workshops e Palestras</h3>
+                        <p class="service-description">Eventos formativos sobre desenvolvimento infantil, educação e inclusão.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3 class="service-title">Atividades Online</h3>
+                        <p class="service-description">Propostas interativas que reforçam o desenvolvimento fora do ambiente presencial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="contato">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Contato</h3>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="https://wa.me/5513997610200" target="_blank" rel="noopener noreferrer">
+                                    💬 WhatsApp: (13) 99761-0200
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/espacoadapta.com.br" target="_blank" rel="noopener noreferrer">
+                                    📸 Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/maps/place/Espa%C3%A7o+Adapta+-+Psicopedagogia/@-23.9521427,-46.3303493,17z/data=!4m18!1m9!3m8!1s0x94ce0382a07b72b9:0xa17e673f68d453da!2sEspa%C3%A7o+Adapta+-+Psicopedagogia!8m2!3d-23.9521476!4d-46.3277744!9m1!1b1!16s%2Fg%2F11xhbbnjxj!3m7!1s0x94ce0382a07b72b9:0xa17e673f68d453da!8m2!3d-23.9521476!4d-46.3277744!9m1!1b1!16s%2Fg%2F11xhbbnjxj?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank" rel="noopener noreferrer">
+                                    ⭐ Avaliações no Google
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Horário de Atendimento</h3>
+                        <p>De segunda a sexta-feira<br>das 08:30 às 19:00</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Localização</h3>
+                        <p>Av. Senador Feijó, 686 – Sala 1224<br>Vila Matias, Santos – SP<br>CEP: 11015-504</p>
+                        <p>📍 <a href="/localizacao.html">Como chegar?</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>
+                        &copy; 2025 Espaço Adapta — Todos os direitos reservados.<br>
+                        Site desenvolvido por <a href="https://multiexperience.com.br" target="_blank" rel="noopener noreferrer">
+                            <strong>multiexperience</strong>
+                        </a>
+                    </p>
+                </div>
+            </div>
         </footer>
 
 
     </main>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
